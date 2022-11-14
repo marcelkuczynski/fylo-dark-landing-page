@@ -526,13 +526,14 @@ footer {
 @media only screen and (min-width: 1200px) {
     .footer_container {
         display: flex;
-        justify-content: center;
+        justify-content: space-evenly;
         align-items: flex-start;
         width: 100%;
-        gap: 4rem;
     }
     .logo_container {
-        width: 90%;
+        display: flex;
+        justify-content: flex-start;
+        width: 85%;
         margin: 0 auto;
     }
     .footer_logo {
