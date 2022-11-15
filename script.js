@@ -5,6 +5,9 @@ function ValidateEmail(inputText) {
     if (inputText.value.match(mailformat)) {
         document.getElementById("addedText").innerHTML = "";
         return true;
+    } else if (inputText.value === "") {
+        Event.preventDefault();
+        return false;
     } else {
         document.getElementById("addedText").style.paddingTop = "0.2rem";
         document.getElementById("addedText").style.paddingLeft = "2rem";

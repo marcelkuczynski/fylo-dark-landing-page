@@ -526,15 +526,17 @@ footer {
 @media only screen and (min-width: 1200px) {
     .footer_container {
         display: flex;
-        justify-content: space-evenly;
+        justify-content: space-between;
         align-items: flex-start;
         width: 100%;
+        padding: 0 10rem;
     }
     .logo_container {
         display: flex;
         justify-content: flex-start;
-        width: 85%;
+        width: 100%;
         margin: 0 auto;
+        padding-left: 10rem;
     }
     .footer_logo {
         padding-top: 5rem;
@@ -545,13 +547,16 @@ footer {
     }
     .footer_nav {
         margin-top: 0;
+        flex: 0 0 8rem;
     }
     .footer_logo {
         margin-top: 0;
     }
     .footer_info {
-        width: 30%;
-        font-size: 1rem;
+        flex: 0 0 30%;
+    }
+    .footer_info p {
+        font-size: 1.2rem;
     }
     .footer_nav li a:hover {
         font-weight: 700;
